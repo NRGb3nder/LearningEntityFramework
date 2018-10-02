@@ -54,6 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolDbContext.cs" />
+    <Compile Include="SchoolDbInitializer.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>

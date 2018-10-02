@@ -9,6 +9,7 @@ namespace CodeFirstExample
 
         public SchoolDbContext() : base("name=SchoolDBConnection")
         {
+            Database.SetInitializer(new SchoolDbInitializer());
         }
     }
 }
