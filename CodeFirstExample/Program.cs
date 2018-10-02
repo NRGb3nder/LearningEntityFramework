@@ -6,7 +6,7 @@ namespace CodeFirstExample
     {
         static void Main(string[] args)
         {
-            using (var context = new SchoolContext())
+            using (var context = new SchoolDbContext())
             {
                 var student1 = new Student { StudentName = "Sam", Height = 180, Weight = 74.6f };
                 var student2 = new Student { StudentName = "John", Height = 174, Weight = 67.5f };

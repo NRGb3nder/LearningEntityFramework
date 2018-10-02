@@ -2,12 +2,12 @@
 
 namespace CodeFirstExample
 {
-    public class SchoolContext : DbContext
+    public class SchoolDbContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
 
-        public SchoolContext() : base("name=SchoolDBConnection")
+        public SchoolDbContext() : base("name=SchoolDBConnection")
         {
         }
     }
