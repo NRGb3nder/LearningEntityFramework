@@ -7,7 +7,7 @@ namespace CodeFirstExample
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
 
-        public SchoolContext() : base("SchoolDBConnection")
+        public SchoolContext() : base("name=SchoolDBConnection")
         {
         }
     }
