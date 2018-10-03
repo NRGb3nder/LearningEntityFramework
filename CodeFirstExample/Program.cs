@@ -1,4 +1,6 @@
 ﻿using System;
+using CodeFirstExample.Database;
+using CodeFirstExample.Database.Domain;
 
 namespace CodeFirstExample
 {

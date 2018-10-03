@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace CodeFirstExample
+namespace CodeFirstExample.Database
 {
     public class SchoolDbInitializer : DropCreateDatabaseAlways<SchoolDbContext>
     {

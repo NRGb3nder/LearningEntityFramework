@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
+using CodeFirstExample.Database.Domain;
 
-namespace CodeFirstExample
+namespace CodeFirstExample.Database
 {
     public class SchoolDbContext : DbContext
     {
@@ -9,7 +10,7 @@ namespace CodeFirstExample
 
         public SchoolDbContext() : base("name=SchoolDBConnection")
         {
-            Database.SetInitializer(new SchoolDbInitializer());
-        }
+            System.Data.Entity.Database.SetInitializer(new SchoolDbInitializer());
+        } 
     }
 }

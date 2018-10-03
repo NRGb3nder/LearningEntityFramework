@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CodeFirstExample
+namespace CodeFirstExample.Database.Domain
 {
     public class Student
     {

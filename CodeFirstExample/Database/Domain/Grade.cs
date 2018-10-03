@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CodeFirstExample
+namespace CodeFirstExample.Database.Domain
 {
     public class Grade
     {
