@@ -18,15 +18,37 @@ namespace CodeFirstExample.Database
         {
             modelBuilder.HasDefaultSchema("Admin");
 
+            modelBuilder.Entity<Student>().HasKey(e => e.StudentKey);
+            modelBuilder.Entity<Grade>().HasKey(e => e.GradeKey);
+            modelBuilder.Entity<Standard>().HasKey(e => e.StandardKey);
+
             modelBuilder.Entity<Student>().Map(m => 
             {
-                m.Properties(p => new { p.StudentID, p.StudentName });
+                m.Properties(e => new { e.StudentKey, e.StudentName });
                 m.ToTable("StudentInfo");
             }).Map(m =>
             {
-                m.Properties(p => new { p.StudentID, p.Height, p.Weight, p.Photo, p.DateOfBirth });
+                m.Properties(e => new { e.StudentKey, e.Height, e.Weight, e.Photo, e.DateOfBirth });
                 m.ToTable("StudentInfoDetail");
             });
+
+            modelBuilder.Entity<Student>()
+                .Property(e => e.StudentName)
+                .HasMaxLength(50)
+                .IsFixedLength()
+                .IsConcurrencyToken();
+            modelBuilder.Entity<Student>()
+                .Property(e => e.DateOfBirth)
+                .HasColumnName("DoB")
+                .HasColumnOrder(3)
+                .HasColumnType("datetime2");
+            modelBuilder.Entity<Student>()
+                .Property(e => e.Height)
+                .HasPrecision(5, 2)
+                .IsOptional();
+            modelBuilder.Entity<Student>()
+                .Property(e => e.Weight)
+                .IsRequired();
 
             modelBuilder.Entity<Grade>().ToTable("GradeInfo");
         }

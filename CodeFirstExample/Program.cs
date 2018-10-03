@@ -10,8 +10,8 @@ namespace CodeFirstExample
         {
             using (var context = new SchoolDbContext())
             {
-                var student1 = new Student { StudentName = "Sam", Height = 180, Weight = 74.6f };
-                var student2 = new Student { StudentName = "John", Height = 174, Weight = 67.5f };
+                var student1 = new Student { StudentName = "Sam", Height = 180.45m, Weight = 74.6f };
+                var student2 = new Student { StudentName = "John", Height = 174.87m, Weight = 67.5f };
 
                 context.Students.Add(student1);
                 context.Students.Add(student2);

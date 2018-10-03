@@ -4,7 +4,7 @@ namespace CodeFirstExample.Database.Domain
 {
     public class Grade
     {
-        public int GradeId { get; set; }
+        public int GradeKey { get; set; }
         public string GradeName { get; set; }
         public string Section { get; set; }
 
