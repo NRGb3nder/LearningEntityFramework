@@ -7,6 +7,7 @@ namespace CodeFirstExample.Database
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Grade> Grades { get; set; }
+        public DbSet<Standard> Standards { get; set; }
 
         public SchoolDbContext() : base("name=SchoolDBConnection")
         {
