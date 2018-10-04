@@ -22,6 +22,10 @@ namespace CodeFirstExample.Database
             modelBuilder.Entity<Grade>().HasKey(e => e.GradeKey);
             modelBuilder.Entity<Standard>().HasKey(e => e.StandardKey);
 
+            modelBuilder.Entity<Student>()
+                .HasRequired(e => e.StudentAddress)
+                .WithRequiredPrincipal(e => e.Student);
+
             modelBuilder.Entity<Student>().Map(m => 
             {
                 m.Properties(e => new { e.StudentKey, e.StudentName });

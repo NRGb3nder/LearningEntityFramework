@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Database\Domain\Grade.cs" />
     <Compile Include="Database\Domain\Standard.cs" />
+    <Compile Include="Database\Domain\StudentAddress.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Database\SchoolDbContext.cs" />

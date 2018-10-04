@@ -12,5 +12,6 @@ namespace CodeFirstExample.Database.Domain
         public float Weight { get; set; }
 
         public Grade Grade { get; set; }
+        public virtual StudentAddress StudentAddress { get; set; }
     }
 }
