@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Configurations\GradeEntityConfiguration.cs" />
+    <Compile Include="Database\Configurations\StandardEntityConfiguration.cs" />
+    <Compile Include="Database\Configurations\StudentEntityConfiguration.cs" />
     <Compile Include="Database\Domain\Course.cs" />
     <Compile Include="Database\Domain\Grade.cs" />
     <Compile Include="Database\Domain\Standard.cs" />
