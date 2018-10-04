@@ -9,6 +9,7 @@ namespace CodeFirstExample.Database
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Standard> Standards { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<StudentAddress> StudentAddresses { get; set; }
 
         public SchoolDbContext() : base("name=SchoolDBConnection")
         {
