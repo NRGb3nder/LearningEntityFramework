@@ -6,6 +6,7 @@ namespace CodeFirstExample.Database.Domain
     {
         public int StandardKey { get; set; }
         public string StandardName { get; set; }
+        public string Description { get; set; }
 
         public ICollection<Student> Students { get; set; }
     }

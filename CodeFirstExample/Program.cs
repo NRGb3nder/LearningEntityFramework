@@ -23,6 +23,11 @@ namespace CodeFirstExample
                     Console.WriteLine("{0}. Height: {1}, Weight: {2}", student.StudentName, 
                         student.Height, student.Weight);
                 }
+                Console.WriteLine();
+                foreach (var standard in context.Standards)
+                {
+                    Console.WriteLine("{0}: {1}", standard.StandardName, standard.Description);
+                }
             }
 
             Console.ReadLine();
