@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Domain\Course.cs" />
     <Compile Include="Database\Domain\Grade.cs" />
     <Compile Include="Database\Domain\Standard.cs" />
     <Compile Include="Database\Domain\StudentAddress.cs" />

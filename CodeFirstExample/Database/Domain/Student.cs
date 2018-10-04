@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodeFirstExample.Database.Domain
 {
@@ -13,5 +14,6 @@ namespace CodeFirstExample.Database.Domain
 
         public Grade Grade { get; set; }
         public virtual StudentAddress StudentAddress { get; set; }
+        public virtual ICollection<Course> Courses { get; set; } = new HashSet<Course>();
     }
 }
